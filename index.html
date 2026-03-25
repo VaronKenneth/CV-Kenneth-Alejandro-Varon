@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Kenneth Alejandro Varón</title>
+    <style>
+        :root {
+            --primary: #1a2a3a;
+            --secondary: #2980b9;
+            --accent: #27ae60;
+            --bg: #f0f2f5;
+            --text: #333;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+            line-height: 1.6; 
+            color: var(--text); 
+            background-color: var(--bg);
+            padding: 40px 20px;
+        }
+        .cv-wrapper {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            display: flex;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+        /* Columna Izquierda */
+        .sidebar {
+            width: 30%;
+            background-color: var(--primary);
+            color: white;
+            padding: 40px 25px;
+        }
+        .sidebar h2 { 
+            font-size: 1.1rem; 
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 8px;
+            margin: 30px 0 15px;
+        }
+        .sidebar h2:first-child { margin-top: 0; }
+        .info-block { font-size: 0.9rem; margin-bottom: 15px; opacity: 0.9; }
+        
+        /* Columna Derecha */
+        .main {
+            width: 70%;
+            padding: 50px;
+        }
+        .header h1 { color: var(--primary); font-size: 2.5rem; line-height: 1.1; margin-bottom: 10px; }
+        .header .tagline { color: var(--secondary); font-weight: 600; font-size: 1.2rem; margin-bottom: 40px; }
+        
+        section { margin-bottom: 35px; }
+        h3 { color: var(--primary); font-size: 1.3rem; margin-bottom: 15px; position: relative; }
+        
+        .p-text { font-size: 1rem; color: #555; text-align: justify; }
+
+        .quality-card { margin-bottom: 15px; }
+        .quality-title { font-weight: bold; color: var(--primary); display: block; }
+        .quality-desc { font-size: 0.95rem; color: #666; }
+
+        .job-entry { margin-bottom: 20px; border-left: 3px solid #eee; padding-left: 15px; }
+        .job-title { font-weight: bold; font-size: 1.1rem; color: #444; }
+        .job-date { font-size: 0.85rem; color: #888; display: block; margin-bottom: 5px; }
+
+        /* Botón de Acción */
+        .actions { text-align: center; margin-top: 30px; }
+        .btn-save {
+            background: var(--accent);
+            color: white;
+            padding: 14px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
+        }
+        .btn-save:hover { background: #219150; transform: translateY(-2px); }
+
+        @media (max-width: 768px) {
+            .cv-wrapper { flex-direction: column; }
+            .sidebar, .main { width: 100%; }
+        }
+        @media print {
+            body { padding: 0; background: white; }
+            .cv-wrapper { box-shadow: none; border-radius: 0; width: 100%; max-width: 100%; }
+            .actions { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="cv-wrapper">
+    <aside class="sidebar">
+        <h2>Contacto</h2>
+        <div class="info-block"><strong>Ciudad:</strong><br>Bogotá, Colombia</div>
+        <div class="info-block"><strong>Móvil:</strong><br>+57 322 350 8510</div>
+        <div class="info-block"><strong>Correo:</strong><br>varonalejandrok@gmail.com</div>
+
+        <h2>Formación</h2>
+        <div class="info-block"><strong>Ingeniería de Sistemas</strong><br>En formación actual</div>
+        <div class="info-block"><strong>Bachiller Técnico</strong><br>Especialidad Comercial</div>
+
+        <h2>Idiomas</h2>
+        <div class="info-block">Español: Nativo</div>
+        <div class="info-block">Inglés: Nivel B2</div>
+    </aside>
+
+    <main class="main">
+        <header class="header">
+            <h1>Kenneth Varón</h1>
+            <p class="tagline">Auxiliar Operativo / Apoyo Integral</p>
+        </header>
+
+        <section>
+            <h3>Perfil Profesional</h3>
+            <p class="p-text">Estudiante universitario altamente responsable y dinámico, con una sólida ética de trabajo basada en el compromiso y la puntualidad. Poseo gran capacidad para integrarme en equipos colaborativos, resolver situaciones imprevistas de manera ágil y mantener un desempeño constante en ambientes exigentes. Mi enfoque actual es brindar apoyo operativo eficiente, garantizando el cumplimiento de los estándares de servicio del establecimiento.</p>
+        </section>
+
+        <section>
+            <h3>Cualidades y Fortalezas</h3>
+            
+            <div class="quality-card">
+                <span class="quality-title">Compromiso y Adaptabilidad</span>
+                <span class="quality-desc">Facilidad para integrarme a nuevos ritmos de trabajo y aprender rápidamente protocolos de limpieza, organización o atención.</span>
+            </div>
+
+            <div class="quality-card">
+                <span class="quality-title">Orientación al Servicio</span>
+                <span class="quality-desc">Trato amable y respetuoso tanto con el cliente final como con el equipo de trabajo, asegurando un ambiente laboral positivo.</span>
+            </div>
+
+            <div class="quality-card">
+                <span class="quality-title">Dinamismo Operativo</span>
+                <span class="quality-desc">Capacidad para gestionar múltiples tareas simultáneamente en horas de alta demanda (domingos y festivos) sin perder el orden.</span>
+            </div>
+
+            <div class="quality-card">
+                <span class="quality-title">Comunicación y Orden</span>
+                <span class="quality-desc">Precisión en el seguimiento de instrucciones y meticulosidad en la organización de los espacios de trabajo.</span>
+            </div>
+        </section>
+
+        <section>
+            <h3>Experiencia Destacada</h3>
+            <div class="job-entry">
+                <span class="job-title">Asistente Operativo Junior</span>
+                <span class="job-date">Julio 2025 – Presente</span>
+                <p class="p-text">Ejecución de tareas de soporte logístico y operativo, manejo de requerimientos inmediatos bajo presión y colaboración en la mejora de procesos internos para optimizar el tiempo de entrega.</p>
+            </div>
+        </section>
+
+        <section>
+            <p style="font-size: 0.9rem; color: #888; font-style: italic;">Disponibilidad total e inmediata para laborar domingos y festivos.</p>
+        </section>
+    </main>
+</div>
+
+<div class="actions">
+    <button class="btn-save" onclick="window.print()">Guardar como PDF para aplicar</button>
+</div>
+
+</body>
+</html>
